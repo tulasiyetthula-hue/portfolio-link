@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tulasi Yetthula | AI & ML Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eef2f6;--surface:#fff;--ink:#14213d;--muted:#55627a;--line:#cfd8e3;--accent:#2b4eff;--accent-ink:#fff;--tint:#dfe6ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--surface:#172038;--ink:#e8edf7;--muted:#9aa8c4;--line:#2a3654;--accent:#7f96ff;--accent-ink:#0f1626;--tint:#222d52}}
+:root[data-theme="dark"]{--bg:#0f1626;--surface:#172038;--ink:#e8edf7;--muted:#9aa8c4;--line:#2a3654;--accent:#7f96ff;--accent-ink:#0f1626;--tint:#222d52}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Sora,"Segoe UI",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+header.top b{font-family:Sora,sans-serif}
+nav a{margin-left:1.1rem;color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hero{padding:3.5rem 0 3rem}
+.hero h1{font-size:clamp(2.6rem,9vw,5.6rem);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:34rem;font-size:1.15rem;color:var(--muted);margin:1.25rem 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:500;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+section{padding:2.5rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:1.6rem;margin-bottom:1.5rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem;margin-bottom:1.25rem}
+.proj h3{font-size:1.3rem;margin-bottom:.25rem}
+.stack{color:var(--muted);font-size:.92rem;margin:0 0 .75rem}
+.proj ul{margin:.5rem 0 0;padding-left:1.2rem}
+.proj li{margin:.3rem 0}
+.pipe{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:1rem 0 .25rem}
+.pipe span{background:var(--tint);border-radius:6px;padding:.35rem .7rem;font-size:.88rem;font-weight:500}
+.pipe i{color:var(--accent);font-style:normal;font-weight:600}
+.pipe .out{background:var(--accent);color:var(--accent-ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem}
+.box h3{font-size:1rem;margin-bottom:.4rem}
+.box p{margin:0;color:var(--muted);font-size:.95rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.tl p{margin:.15rem 0}
+.tl .m{color:var(--muted);font-size:.93rem}
+.tl>div{margin-bottom:1.1rem}
+.contact a{display:block;margin:.4rem 0}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:640px){.two{grid-template-columns:1fr}nav a{margin:0 1rem 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><b>Tulasi Yetthula</b>
+<nav><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+<h1>Tulasi Yetthula</h1>
+<p>B.Tech student in Artificial Intelligence and Machine Learning. I build models that learn from data and applications that people can use.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="mailto:tulasiyetthula@gmail.com">Email me</a></div>
+</div>
+</div>
+
+<section id="projects"><div class="wrap"><h2>Projects</h2>
+<div class="proj">
+<h3>Skin Lesion Classification</h3>
+<p class="stack">ResNet50, LSTM, Softmax</p>
+<p>A deep learning system that classifies dermoscopic images as benign or malignant, supporting automated and early skin cancer detection.</p>
+<div class="pipe" aria-label="Model pipeline"><span>Dermoscopic image</span><i>&rarr;</i><span>Augmentation and normalization</span><i>&rarr;</i><span>ResNet50 features</span><i>&rarr;</i><span>LSTM</span><i>&rarr;</i><span class="out">Softmax: benign or malignant</span></div>
+<ul><li>Applied data augmentation and normalization to improve generalization and robustness.</li>
+<li>Used ResNet50 as a feature extractor and an LSTM to learn relationships among the extracted features.</li></ul>
+</div>
+<div class="proj">
+<h3>Personal Finance Tracker</h3>
+<p class="stack">Java, Spring Boot, MySQL, HTML, CSS, Git</p>
+<p>A web application for managing personal income and expenses.</p>
+<ul><li>Users record and view daily transactions.</li>
+<li>User and transaction data is stored in a MySQL database.</li>
+<li>Built with Java, Spring Boot, HTML, and CSS, and versioned with Git.</li></ul>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap"><h2>Experience and education</h2>
+<div class="two tl">
+<div><h3>Machine Learning Intern</h3><p class="m">Skilledzire</p>
+<ul style="padding-left:1.2rem;margin:.5rem 0 0"><li>Worked on data preprocessing, feature extraction, and model training.</li><li>Implemented Linear Regression, Decision Tree, and KNN algorithms.</li></ul></div>
+<div>
+<div><h3>B.Tech, AI and Machine Learning</h3><p class="m">Lakireddy Bali Reddy College of Engineering, 2023 to 2027</p><p>CGPA 8.29, currently in the 7th semester</p></div>
+<div><h3>Intermediate (MPC)</h3><p class="m">Sri Chaitanya Junior College, 2021 to 2023</p><p>93%</p></div>
+<div><h3>SSC</h3><p class="m">STVRMC High School, 2020</p><p>97%</p></div>
+</div></div>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills and certifications</h2>
+<div class="grid">
+<div class="box"><h3>Languages</h3><p>Python, C, Java (basic)</p></div>
+<div class="box"><h3>Machine learning</h3><p>ML fundamentals, deep learning (basics)</p></div>
+<div class="box"><h3>Web and data</h3><p>HTML, CSS, JavaScript (basics), MySQL (basic), DBMS</p></div>
+<div class="box"><h3>Tools</h3><p>Git, VS Code</p></div>
+<div class="box"><h3>Certifications</h3><p>Python Programming (Cisco), Cybersecurity Essentials (Cisco), Operating Systems (Cisco), Java (Infosys Springboard)</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap"><h2>Contact</h2>
+<p>I am looking for an entry-level role in machine learning or software development.</p>
+<div class="contact">
+<a href="mailto:tulasiyetthula@gmail.com">tulasiyetthula@gmail.com</a>
+<a href="tel:+916301331863">+91-6301331863</a>
+<a href="https://linkedin.com/in/tulasi-yetthula-a841822ba">LinkedIn</a>
+<a href="https://github.com/tulasiyetthula-hue">GitHub</a>
+</div></div></section>
+
+<footer><div class="wrap">Tulasi Yetthula, Mylavaram</div></footer>
+</body>
+</html>
